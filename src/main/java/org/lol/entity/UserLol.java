@@ -16,9 +16,12 @@ import org.lol.converter.BirthdayConverter;
 @Table(name = "users", schema = "public")
 public class UserLol {
     @Id
+    @GeneratedValue(generator = "lol", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "lol", sequenceName = "lol_seq_name", allocationSize = 1)
+    private Long id;
     private String username;
-    private String firstname;
-    private String lastname;
+    @Embedded
+    private UserInfo userInfo;
     @Column(name = "birth_date")
 //    private LocalDate birthDate;
 //    private Integer age;
@@ -32,10 +35,9 @@ public class UserLol {
 
     }
 
-    public UserLol(String username, String firstname, String lastname, Birthday birthDate, Role role) {
+    public UserLol(String username, UserInfo userInfo, Birthday birthDate, Role role) {
         this.username = username;
-        this.firstname = firstname;
-        this.lastname = lastname;
+        this.userInfo = userInfo;
         this.birthDate = birthDate;
         this.role = role;
     }
@@ -44,8 +46,7 @@ public class UserLol {
     public String toString() {
         return "UserLol{" +
                 "username='" + username + '\'' +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
+                ", userInfo=" + userInfo +
                 ", birthDate=" + birthDate +
                 ", role=" + role +
                 '}';

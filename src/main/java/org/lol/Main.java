@@ -32,8 +32,8 @@ public class Main {
 //                        Role.ADMIN
 //                );
                 UserInfo userInfo = new UserInfo("lol", "lol");
-                UserLol lol = new UserLol("lol", userInfo, new Birthday(LocalDate.of(2000, 01, 01)), Role.USER);
-                UserLol lol2 = new UserLol("lol", userInfo, new Birthday(LocalDate.of(2000, 01, 01)), Role.USER);
+//                UserLol lol = new UserLol("lol", userInfo, new Birthday(LocalDate.of(2000, 01, 01)), Role.USER);
+//                UserLol lol2 = new UserLol("lol", userInfo, new Birthday(LocalDate.of(2000, 01, 01)), Role.USER);
 
 //                session.persist(lol);   // Добавить сущность
 //                session.merge(lol2);  // Обновить сущность

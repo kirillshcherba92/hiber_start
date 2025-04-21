@@ -14,11 +14,12 @@ import java.time.LocalDate;
 public class MainLifeCicle {
     public static void main(String[] args) {
         UserInfo userInfo = new UserInfo("Petr", "Petrovich");
-        UserLol user1 = new UserLol(
+        UserLol user1 = new UserLol(null,
                 "Petrov2",
                 userInfo,
                 new Birthday(LocalDate.of(2004, 01, 01)),
-                Role.ADMIN
+                Role.ADMIN,
+                null
         );
 
         try (SessionFactory sessionFactory = HiberUtil.createSessionFactory()) {

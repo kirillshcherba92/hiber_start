@@ -17,7 +17,7 @@ import org.lol.converter.BirthdayConverter;
 public class UserLol {
     @Id
     @GeneratedValue(generator = "lol", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "lol", sequenceName = "lol_seq_name", allocationSize = 1)
+    @SequenceGenerator(name = "lol", sequenceName = "users_id_seq", allocationSize = 1)
     private Long id;
     private String username;
     @Embedded
@@ -31,15 +31,22 @@ public class UserLol {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+//    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
+    @JoinColumn(name = "company_id")
+    private CompanyEntity companyEntity;
+
     public UserLol() {
 
     }
 
-    public UserLol(String username, UserInfo userInfo, Birthday birthDate, Role role) {
+    public UserLol(Long id, String username, UserInfo userInfo, Birthday birthDate, Role role, CompanyEntity companyEntity) {
+        this.id = id;
         this.username = username;
         this.userInfo = userInfo;
         this.birthDate = birthDate;
         this.role = role;
+        this.companyEntity = companyEntity;
     }
 
     @Override

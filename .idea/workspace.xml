@@ -4,25 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="658a90af-7e32-4132-93c0-6676d5adf1f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lol/MainLifeCicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lol/entity/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lol/util/HiberUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/other_init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="658a90af-7e32-4132-93c0-6676d5adf1f2" name="Default Changelist" comment="Second less">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lol/MainMAnyToAone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lol/entity/CompanyEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lol/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lol/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lol/MainLifeCicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lol/MainLifeCicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lol/entity/UserLol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lol/entity/UserLol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/other_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/other_init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/lol/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lol/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/lol/entity/UserLol.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lol/entity/UserLol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <recent name="C:\Users\user\IdeaProjects\hiber-starter\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainLifeCicle">
+  <component name="RunManager" selected="Application.MainMAnyToAone">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="temurin-22" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -113,6 +107,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainMAnyToAone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lol.MainMAnyToAone" />
+      <module name="hiber-sarter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lol.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -128,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainMAnyToAone" />
         <item itemvalue="Application.MainLifeCicle" />
         <item itemvalue="Application.Main" />
       </list>
@@ -146,8 +154,18 @@
       <workItem from="1744286285206" duration="981000" />
       <workItem from="1744478825433" duration="844000" />
       <workItem from="1744703921464" duration="11018000" />
-      <workItem from="1744821180923" duration="2818000" />
+      <workItem from="1744821180923" duration="2947000" />
+      <workItem from="1744983048571" duration="3449000" />
+      <workItem from="1745220907825" duration="1027000" />
     </task>
+    <task id="LOCAL-00001" summary="Second less">
+      <created>1744831854371</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744831854371</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +187,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/src/main/java/org/lol" />
     </ignored-roots>
+    <MESSAGE value="Second less" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second less" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -180,7 +200,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lol/MainLifeCicle.java</url>
-          <line>30</line>
+          <line>31</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

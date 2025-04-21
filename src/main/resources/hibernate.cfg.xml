@@ -11,6 +11,7 @@
     <property name="show_sql">true</property>
 <!--    Добавляем класс для маппинга на сущность -->
     <mapping class="org.lol.entity.UserLol"></mapping>
+    <mapping class="org.lol.entity.CompanyEntity"></mapping>
 
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
